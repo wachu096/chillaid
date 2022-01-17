@@ -1,0 +1,1141 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+#scrollButton{
+    position: fixed;
+    z-index: 500;
+    right: 20px;
+    bottom: 20px;
+    background-color: #97A9BD;
+    color: #f1f1f1;
+    padding: 10px;
+    font-size: 26px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    transition: 0.5s ease;
+    opacity: 0.8;
+}
+
+#scrollButton:hover{
+    background-color: #788592;
+    color: #dbdbdb;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+/*=========================Góra - logo - nawigacja=========================*/
+#topNavAndLogo{
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+}
+
+#topNavAndLogo header{
+    max-width: 1124px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.topLogo{
+    float: left;
+    padding: 12px;
+}
+
+.topLogo a{
+    text-decoration: none;
+    color: white;
+}
+
+.topLogo h1{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.spanCapitalLetter{
+    font-size: 40px;
+    color:#97BDAB;
+}
+
+nav.navbarTop{
+    float: right;
+}
+
+nav.navbarTop ul{
+    padding: 0;
+    margin: 0;
+ }
+
+nav.navbarTop ul li{
+   color: white;
+   list-style-type: none;
+   float: left;
+   font-size: 16px;
+   padding: 25px 15px;
+   text-transform: uppercase;
+}
+
+nav.navbarTop ul li a{
+    text-decoration: none;
+    color: white;
+ }
+
+nav.navbarTop ul li a:hover{
+    color: #97A9BD;
+    transition: 0.4s;
+ }
+
+nav.navbarTop ul li a:active{
+    color: #657486;
+ }
+
+nav.navbarTop ul li.homeColor{
+     color: #97A9BD;
+ }
+
+nav.navbarTop ul li ul.dropdownContent{
+    position: absolute;
+    margin-top: 25px;
+    z-index: 100;
+    display: none;
+    width: 200px;
+}
+
+nav.navbarTop ul li ul.dropdownContent li ul.dropdownContentLevel2{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    left: 100%;
+    top: 33.33333%;
+    display: none;
+}
+
+nav.navbarTop ul li ul.dropdownContent li:hover ul.dropdownContentLevel2{
+    display: block;
+}
+
+nav.navbarTop ul li:hover ul.dropdownContent{
+    display: block;
+}
+
+nav.navbarTop ul li ul.dropdownContent li{
+    display: block;
+    width: 100%;
+    float: none;
+    padding: 0;
+    background-color: rgba(151, 169, 189, 0.7);
+    border-bottom: 1px solid white;
+    transition: 0.5s ease;
+    animation: fadeInCss 0.5s;
+}
+
+nav.navbarTop ul li ul.dropdownContent li:hover{
+    color: white;
+    background-color: rgba(176, 195, 217, 1);
+    transition: 0.5s ease;
+}
+
+@keyframes fadeInCss {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+nav.navbarTop ul li ul.dropdownContent li:last-child{
+    border-bottom: none;
+}
+
+nav.navbarTop ul li ul.dropdownContent li a{
+    display: block;
+    padding: 15px 10px 15px 10px;
+}
+
+nav.navbarTop ul li ul.dropdownContent li a:hover{
+    color: white;
+}
+
+ /*=========================Zdjęcie i napis pod nawigacją=========================*/
+
+ #pictureAndSign{
+     width: 100%;
+     height: 80vh;
+     background-image: url('../img/obraz2.jpg');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+
+ }
+
+ #pictureAndSign article{
+     max-width: 1140px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ #pictureAndSign article h3{
+    font-size: 2.4rem;
+    margin: 20px;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#pictureAndSign article p{
+    font-size: 18px;
+    max-width: 65%;
+    margin: 10px auto;
+    color: white;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+#pictureAndSign article footer{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#pictureAndSign article footer a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 18px 10px;
+    text-transform: uppercase;
+    border: 1px solid;
+    color: #FFFFFF;
+    background-color: #97A9BD;
+    border-color: #97A9BD;
+    transition: 0.4s ease-in-out;
+}
+
+#pictureAndSign article footer a:hover{
+    background-color: transparent;
+    border-color: #97A9BD;
+    transition: 0.4s ease-in-out;
+}
+
+@media(max-width: 900px){
+    #pictureAndSign article h3{
+        font-size: 1.7rem;
+    }
+
+    #pictureAndSign article p{
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width: 600px){
+    #pictureAndSign article{
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 440px){
+    #pictureAndSign article{
+        top: 35%;
+    }
+
+}
+
+ /*=========================Zdjęcia i font awesome=========================*/
+
+ #row3Div{
+     width: 100%;
+     height: auto;
+ }
+
+ #row3Div section{
+     max-width: 1140px;
+     margin: 0 auto;
+     width: 100%;
+     font-size: 0;
+     margin-top: -100px;
+     position: relative;
+     z-index: 10;
+ }
+
+ #row3Div section .quarters{
+     display: inline-block;
+     width: 23%;
+     font-size: 16px;
+     box-sizing: border-box;
+     margin: 0 1%;
+     padding: 15px;
+     border-radius: 40px 0 40px 0;
+     color: white;
+     text-align: center;
+     transition: 0.5s ease;
+     box-shadow: 1px 2px 16px -7px rgba(66, 68, 90, 1);
+ }
+
+ #row3Div section .quarters h6{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#row3Div section .quarters i{
+    background-color: white;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+#row3Div section .quarters i.fa-hand-rock{
+    color: #97A9BD;
+    transition: 0.5s ease;
+}
+#row3Div section .quarters i.fa-dove{
+    color: #A197BD;
+    transition: 0.5s ease;
+}
+#row3Div section .quarters i.fa-history{
+    color: #BDA697;
+    transition: 0.5s ease;
+}
+#row3Div section .quarters i.fa-heartbeat{
+    color: #97BDAB;
+    transition: 0.5s ease;
+}
+
+#row3Div section .quarters:nth-child(1){
+    background-color: #97A9BD;
+}
+#row3Div section .quarters:nth-child(2){
+    background-color: #A197BD;
+}
+#row3Div section .quarters:nth-child(3){
+    background-color: #BDA697;
+}
+#row3Div section .quarters:nth-child(4){
+    background-color: #97BDAB; 
+}
+
+#row3Div section .quarters:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s ease;
+}
+
+#row3Div section .quarters:hover i.fa-hand-rock{
+    background-color: #97A9BD;
+    color: white;
+    transition: 0.5s ease;
+}
+
+#row3Div section .quarters:hover i.fa-dove{
+    background-color: #A197BD;
+    color: white;
+    transition: 0.5s ease;
+}
+
+#row3Div section .quarters:hover i.fa-history{
+    background-color: #BDA697;
+    color: white;
+    transition: 0.5s ease;
+}
+
+#row3Div section .quarters:hover i.fa-heartbeat{
+    background-color: #97BDAB;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.pictures{
+    max-width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+    float: left;
+    width: 46%;
+    transition: 0.5s ease;
+  }
+
+div.gallery:nth-child(1) {
+    margin-left: 2%;
+}
+
+div.gallery:nth-child(2) {
+    margin-right: 2%;
+    float: right;
+}
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+    background-color: #97A9BD;
+    transition: 0.5s ease;
+    color: white;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+  }
+
+@media(max-width: 750px){
+    #row3Div section .quarters{
+        width: 96%;
+        margin: 2%;
+    }
+    div.gallery {
+        width: 96%;
+        margin: 2%;
+      }
+}
+
+/*=========================Galeria z kilkoma zdjęciami=========================*/
+
+#smallGalleryRow{
+    width: 100%;
+    height: auto;
+    background-image: url('../img/img1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#smallGalleryRow section{
+    max-width: 1140px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding: 60px 0 20px 0;
+}
+
+#smallGalleryRow section p{
+    margin: 0;
+}
+
+#smallGalleryRow section h4{
+    margin: 5px;
+    font-size: 26px;
+}
+
+#smallGalleryRow section ul{
+    margin-top: 60px;
+    padding: 0;
+}
+
+#smallGalleryRow section ul > a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+#smallGalleryRow section ul > a > li{
+    background-color: white;
+    list-style-type: none;
+    float: left;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    margin-right: 1.5%;
+    margin-bottom: 3%;
+    margin-left: 1.5%;
+    transition: 0.5s ease;
+    box-shadow: 1px 2px 16px -7px rgba(66, 68, 90, 1);
+}
+
+#smallGalleryRow section ul > a > li:hover{
+    background-color: #97A9BD;
+    color: white;
+    transition: 0.5s ease;
+}
+
+#smallGalleryRow section ul > a > li:hover i{
+    background-color: white;
+    color: #97A9BD;
+    transition: 0.5s ease;
+}
+
+#smallGalleryRow section ul > a > li > i{
+    color: white;
+    background-color: #97A9BD;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: 0.5s ease;
+}
+
+@media(max-width: 1100px){
+    #smallGalleryRow section ul > a > li{
+        width: 48%;
+        margin: 1%;
+    }
+}
+
+@media(max-width: 750px){
+    #smallGalleryRow section ul > a > li{
+        width: 96%;
+        margin: 2%;
+    }
+}
+
+/*=========================Paski stanu=========================*/
+
+#progressBars{
+    width: 100%; 
+    height: auto;
+    overflow: hidden;
+}
+
+.titleMessage{
+    max-width: 1140px;
+    margin: 60px auto 60px auto;
+    text-align: center;
+}
+
+.titleMessage p{
+    margin: 0;
+}
+
+.titleMessage h4{
+    margin: 10px;
+    font-size: 24px;
+}
+
+.bars{
+    max-width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.bars .progress-bar{
+    float: left;
+    overflow: hidden;
+    height: 280px;
+    width: 21%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin: 0 2%;
+    padding: 0 1%;
+}
+
+.progress-bar p{
+   text-align: center;
+   text-transform: uppercase;
+   margin-bottom: 25px;
+}
+
+@media(max-width: 1000px){
+    .bars .progress-bar{
+        width: 46%;
+        padding: 0 10%;
+        margin: 0 2%;
+        
+    }
+}
+
+@media(max-width: 600px){
+    .bars .progress-bar{
+        float: none;
+        padding: 0;
+        margin: 0 auto;
+        
+    }
+}
+
+@media(max-width: 440px){
+    .bars .progress-bar{
+        width: 100%;
+        padding: 0 20%;
+    }
+}
+
+@media(max-width: 330px){
+    .bars .progress-bar{
+        width: 100%;
+        padding: 0 10%;
+    }
+}
+
+/*=========================3 zdjęcia z tytułem=========================*/
+
+#downPictures{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #F4F4F4 55%, #FFFFFF 50%, #FFFFFF 100%);
+}
+
+#downPictures section{
+    max-width: 1140px;
+    margin: 60px auto 60px auto;
+    text-align: center;
+}
+
+#downPictures section p{
+    margin: 0;
+}
+
+#downPictures section h4{
+    margin: 10px;
+    font-size: 24px;
+}
+
+#downPictures article{
+    max-width: 1140px;
+    margin: 20px auto 20px auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+div.gallery2 {
+    margin: 10px auto 10px auto;
+    border: 1px solid #ccc;
+    float: left;
+    width: 32%;
+}
+
+div.gallery2:nth-child(2) {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+  
+div.gallery2:hover img {
+    opacity: 0.7;
+    transition: 0.5s ease;
+}
+  
+div.gallery2 img {
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+}
+
+div.gallery2 div.desc p, div.gallery2 div.desc h3{
+    margin: 0;
+}
+
+
+@media(max-width: 900px){
+    div.gallery2 {
+        width: 48%;
+    }
+
+    div.gallery2:nth-child(2) {
+        margin-left: 10px;
+    }
+}
+
+@media(max-width: 725px){
+    div.gallery2 {
+        width: 100%;
+    }
+    div.gallery2:nth-child(2) {
+        margin-left: 0;
+    }
+    div.gallery2 {
+        margin-top: 10px 0 0 0;
+    }
+}
+
+/*=========================Kolorowy div pośrodku=========================*/
+
+#middleColorDiv{
+    width: 100%;
+    height: auto;
+    background-color: #97A9BD;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+#middleColorDiv section{
+    max-width: 1140px;
+    margin: 60px auto 20px auto;
+    text-align: center;
+}
+
+#middleColorDiv section p{
+    margin: 0;
+    color: white;
+}
+
+#middleColorDiv section h4{
+    margin: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+#middleColorDiv article{
+    max-width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#middleColorDiv article .middleColorArticleDiv{
+    width: 50%;
+    float: left;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+#middleColorDiv article .middleColorArticleDiv figure{
+    overflow: hidden;
+}
+
+#middleColorDiv article .middleColorArticleDiv p{
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 40px 0 40px 0;
+}
+
+
+#middleColorDiv article .middleColorArticleDiv figure img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: left;
+    margin: 20px;
+}
+
+#middleColorDiv article .middleColorArticleDiv figure h4{
+    color: white;
+    margin-bottom: 0;
+    margin-top: 10%;
+}
+
+#middleColorDiv article .middleColorArticleDiv figure p{
+    color: white;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media(max-width: 750px){
+    #middleColorDiv article .middleColorArticleDiv{
+        width: 100%;
+    }
+}
+
+/*=========================Obrazki z komentarzami=========================*/
+#bottomPictureDiv{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#bottomPictureDiv section{
+    max-width: 1140px;
+    margin: 60px auto 20px auto;
+    text-align: center;
+}
+
+#bottomPictureDiv section p{
+    margin: 0;
+}
+
+#bottomPictureDiv section h4{
+    margin: 10px;
+    font-size: 24px;
+}
+
+#bottomPictureDiv article{
+    max-width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+#bottomPictureDiv article .gallery3{
+    width: 32%;
+    float: left;
+}
+
+#bottomPictureDiv article .gallery3:nth-child(2){
+    margin: 0 2%;
+}
+
+.gallery3 a{
+    display: block;
+    transition: 0.5s ease;
+    font-size: 0;
+}
+
+.gallery3 a:hover{
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+
+.gallery3 a img{
+    width: 100%;
+    height: 100%;
+}
+
+.gallery3 .galleryDescription{
+    width: 100%;
+    color: white;
+    overflow: hidden;
+}
+
+.gallery3 .galleryDescription p{
+    padding: 10px;
+    margin: 0;
+    float: left;
+    background-color: #282E39;
+    width: 50%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.gallery3 .galleryDescription p:nth-child(2){
+    text-align: right;
+}
+
+.gallery3 .underDescription{
+    width: 80%;
+    margin: 5px auto 20px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border-left: 1px solid gray;
+}
+
+.gallery3 .underDescription a{
+    font-size: 16px;
+    text-decoration: none;
+}
+
+@media(max-width: 1000px){
+    #bottomPictureDiv article .gallery3{
+        width: 49%;
+        margin-bottom: 2%;
+    }
+    #bottomPictureDiv article .gallery3:nth-child(2){
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+    
+}
+
+@media(max-width: 750px){
+    #bottomPictureDiv article .gallery3{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    #bottomPictureDiv article .gallery3:nth-child(2){
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 2%;
+    }
+    
+}
+/*=========================Formularz i kontakt=========================*/
+#formAndContact{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #e9e9e9;
+    padding-bottom: 40px;
+}
+
+#formAndContact section{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+#formAndContact section header{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 50px auto;
+}
+
+#formAndContact section header h4{
+    font-size: 24px;
+    margin: 0;
+}
+
+#formAndContact section .contactElement{
+    width: 48%;
+    float: left;
+    padding: 0;
+}
+
+#formAndContact section .contactElement li{
+    list-style-type: none;
+    overflow: hidden;
+    padding: 5px;
+    background-color: white;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.contactElement li a i{
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.contactElement li p{
+    color: black;
+    transition: 0.5s ease;
+}
+
+.contactElement li:hover p{
+    color: white;
+    transition: 0.5s ease;
+}
+
+.contactElement li:nth-child(1) a i{
+    background-color: #A197BD;
+}
+.contactElement li:nth-child(2) a i{
+    background-color: #BDA697;
+}
+.contactElement li:nth-child(3) a i{
+    background-color: #97BDAB;
+}
+
+.contactElement li:nth-child(1):hover a i{
+    color: #A197BD;
+    background-color: white;
+}
+.contactElement li:nth-child(2):hover a i{
+    color: #BDA697;
+    background-color: white;
+}
+.contactElement li:nth-child(3):hover a i{
+    color: #97BDAB;
+    background-color: white;
+}
+
+#formAndContact section .contactElement li:nth-child(1):hover{
+    background-color: #A197BD;
+}
+#formAndContact section .contactElement li:nth-child(2):hover{
+    background-color: #BDA697;
+}
+#formAndContact section .contactElement li:nth-child(3):hover{
+    background-color: #97BDAB;
+}
+
+#formAndContact section .contactForm{
+    width: 48%;
+    float: left; 
+    margin-left: 4%;
+}
+
+#formAndContact section .contactForm h5{
+    font-size: 20px;
+    margin: 10px 10px 10px 0;
+}
+
+#formAndContact section .contactForm p{
+    line-height: 1.4;
+}
+
+#formAndContact section .contactForm input[type=text], #formAndContact section .contactForm input[type=email]{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+}
+
+#formAndContact section .contactForm input[type=submit]{
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: 1px solid;
+    color: #FFFFFF;
+    background-color: #97A9BD;
+    border-color: #97A9BD;
+    transition: 0.4s ease-in-out;
+}
+
+#formAndContact section .contactForm input[type=submit]:hover{
+    background-color: transparent;
+    border-color: #97A9BD;
+    transition: 0.4s ease-in-out;
+    color: black;
+}
+
+@media(max-width: 750px){
+    #formAndContact section .contactElement{
+        width: 100%;
+    }
+    #formAndContact section .contactForm{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+/*=========================Stopka=========================*/
+#footerDiv{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    background: radial-gradient(circle, rgba(17,17,17,1) 0%, rgba(22,90,171,1) 100%);
+}
+
+#footerDiv section{
+    max-width: 1140px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#footerDiv section article{
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#footerDiv section article ul{
+    padding: 0;
+}
+
+#footerDiv section article ul li{
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+#footerDiv section article ul li:last-child{
+    border-bottom: none;
+}
+
+#footerDiv section article ul li a{
+    color: #97A9BD;
+    text-decoration: none;
+}
+
+#footerDiv section article img{
+    width: 75px;
+    height: 75px;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+}
+
+#footerDiv section article h3{
+    color: white;
+    margin-bottom: 40px;
+}
+
+#footerDiv section article .quoteDiv:last-child{
+    border-top: 1px solid #f1f1f1;
+    padding-top: 20px;
+}
+
+#footerDiv section article:first-child p{
+    color: #f1f1f1;
+    line-height: 1.5;
+}
+
+#footerDiv section article p{
+    color: #f1f1f1;
+    line-height: 1.5;
+}
+
+#footerDiv section article .quoteDiv a{
+    color: #97A9BD;
+    text-decoration: none;
+}
+
+#footerDiv section article img:hover{
+    opacity: 0.7;
+}
+
+#footerDiv section article .socialMedia i{
+    color: gray;
+    padding: 10px;
+    font-size: 20px;
+    transition: 0.5s ease;
+}
+
+#footerDiv section article .socialMedia i:hover{
+    color: white;
+    background-color: rgb(77, 89, 253);
+    transition: 0.5s ease;
+}
+
+#footerDiv section article a {
+    text-decoration: none;
+    color: white;
+}
+
+#footerDiv section article a h2{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+@media(max-width: 900px){
+    #footerDiv section article{
+        width: 50%;
+    }
+}
+
+@media(max-width: 640px){
+    #footerDiv section article{
+        width: 100%;
+    }
+}
+/*=========================Stopka=========================*/
+.realFooter{
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    background-color: #282E39;
+    color: #A5A6AA;
+}
+
+.realFooter .realFooterDiv{
+    max-width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.realFooter .realFooterDiv p{
+    width: 50%;
+    float: left;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+
+.realFooter .realFooterDiv p:last-child{
+    text-align: right;
+}
+
+@media(max-width: 480px){
+    .realFooter .realFooterDiv p{
+        width: 100%;
+    }
+    .realFooter .realFooterDiv p:last-child{
+        text-align: left;
+    }
+}
